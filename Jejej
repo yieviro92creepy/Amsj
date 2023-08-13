@@ -1,0 +1,2239 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local BanGUI = Instance.new("ScreenGui")
+local Back = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local ExeGUI = Instance.new("Frame")
+local Welcome = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local BillboardGui = Instance.new("BillboardGui")
+local TextLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Template = Instance.new("Frame")
+local UnBan = Instance.new("TextButton")
+local Spectate = Instance.new("TextButton")
+local Note = Instance.new("TextBox")
+local Ban = Instance.new("TextButton")
+local Kick = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local Home = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Server = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Ban_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Teleports = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local LocalPlayer = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local OpenBanPanel = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ServerFrame = Instance.new("ScrollingFrame")
+local MaidAllServer = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local OpenExecutor = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local OpenChatMenu = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local ResetCashAll = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local SetClockTime = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local ShutDownButton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local LocalPlayerFrame = Instance.new("ScrollingFrame")
+local Headless = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Korblox = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local SettingsFrame = Instance.new("ScrollingFrame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local HidePanelWhenBanGuiIsVisible = Instance.new("Frame")
+local Button = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local Title = Instance.new("TextLabel")
+local PlayerName = Instance.new("ImageLabel")
+local coso = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TPFrame = Instance.new("ScrollingFrame")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local Template_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local BillboardGui_2 = Instance.new("BillboardGui")
+local TextLabel_4 = Instance.new("TextLabel")
+local Scripts = Instance.new("Folder")
+local Settings_2 = Instance.new("Folder")
+local Values = Instance.new("Folder")
+local Temp = Instance.new("Frame")
+local Reason = Instance.new("TextLabel")
+local Mod = Instance.new("TextLabel")
+local Username = Instance.new("TextButton")
+local Username2 = Instance.new("TextLabel")
+local Entries = Instance.new("Frame")
+local ClockTimeInputFrame = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local TimeBox = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local YesButton = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local NoButton = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local ExecuteFrame = Instance.new("Frame")
+local Execute2 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Text2 = Instance.new("TextBox")
+local UICorner_22 = Instance.new("UICorner")
+local ExeTItle = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+local ChatFrame = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local MessageInput = Instance.new("TextBox")
+local UICorner_25 = Instance.new("UICorner")
+local PlayerInput = Instance.new("TextBox")
+local UICorner_26 = Instance.new("UICorner")
+local Send = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Mobile = Instance.new("Frame")
+local BottomLeft = Instance.new("Frame")
+local BanPanel = Instance.new("ImageButton")
+local Frame = Instance.new("Frame")
+local OfflineBansLabel = Instance.new("TextLabel")
+local BanOffline = Instance.new("TextButton")
+local UnbanOffline = Instance.new("TextButton")
+local UnBanUserID = Instance.new("TextBox")
+local BanUserID = Instance.new("TextBox")
+local BannedPlayersButton = Instance.new("TextButton")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local Template_3 = Instance.new("Frame")
+local UnBan_2 = Instance.new("TextButton")
+local Spectate_2 = Instance.new("TextButton")
+local Note_2 = Instance.new("TextBox")
+local Ban_3 = Instance.new("TextButton")
+local UIListLayout_7 = Instance.new("UIListLayout")
+local ListGui = Instance.new("ScreenGui")
+local UIListLayout_8 = Instance.new("UIListLayout")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local UIListLayout_9 = Instance.new("UIListLayout")
+local Label = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BanGUI.Name = "BanGUI"
+BanGUI.Parent = game.Workspace.ScreenGui.uhpanel
+BanGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BanGUI.ResetOnSpawn = false
+
+Back.Name = "Back"
+Back.Parent = BanGUI
+Back.AnchorPoint = Vector2.new(0.5, 0.5)
+Back.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Back.Position = UDim2.new(0.691819906, 0, 0.205780327, 0)
+Back.Size = UDim2.new(0, 150, 0, 37)
+Back.Visible = false
+Back.Font = Enum.Font.SourceSansSemibold
+Back.Text = "BACK"
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextScaled = true
+Back.TextSize = 14.000
+Back.TextWrapped = true
+
+UICorner.Parent = Back
+
+ExeGUI.Name = "ExeGUI"
+ExeGUI.Parent = BanGUI
+ExeGUI.AnchorPoint = Vector2.new(0.5, 0.5)
+ExeGUI.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ExeGUI.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ExeGUI.BorderSizePixel = 2
+ExeGUI.Position = UDim2.new(0.499682933, 0, 0.4995839, 0)
+ExeGUI.Size = UDim2.new(0, 1031, 0, 696)
+ExeGUI.Visible = false
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ExeGUI
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 2.000
+Welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.0387972854, 0, 0.298364133, 0)
+Welcome.Size = UDim2.new(0, 289, 0, 60)
+Welcome.Font = Enum.Font.SourceSansSemibold
+Welcome.Text = "Welcome .gg/airleaks"
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextSize = 25.000
+Welcome.TextWrapped = true
+Welcome.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = ExeGUI
+
+BillboardGui.Parent = game.Workspace.ScreenGui.uhpanel.BanGUI.ExeGUI.Enable
+BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BillboardGui.Active = true
+BillboardGui.AlwaysOnTop = true
+BillboardGui.Size = UDim2.new(0, 150, 0, 25)
+
+TextLabel.Parent = BillboardGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 150, 0, 25)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.600
+TextLabel.TextWrapped = true
+
+ScrollingFrame.Parent = ExeGUI
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(47, 47, 47)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.LayoutOrder = 1
+ScrollingFrame.Position = UDim2.new(0.312443763, 0, 0.0261259414, 0)
+ScrollingFrame.Size = UDim2.new(0, 699, 0, 658)
+ScrollingFrame.Visible = false
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+
+Template.Name = "Template"
+Template.Parent = game.Workspace.ScreenGui.uhpanel.BanGUI.ExeGUI.ScrollingFrame.PlayerListScript
+Template.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Template.BackgroundTransparency = 1.000
+Template.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Template.Position = UDim2.new(0, 0, -9.27585972e-08, 0)
+Template.Size = UDim2.new(0, 683, 0, 46)
+
+UnBan.Name = "UnBan"
+UnBan.Parent = Template
+UnBan.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+UnBan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnBan.BorderSizePixel = 2
+UnBan.Position = UDim2.new(0.206117973, 0, -0.0217391308, 0)
+UnBan.Size = UDim2.new(0, 141, 0, 46)
+UnBan.Font = Enum.Font.SourceSans
+UnBan.Text = "To Player"
+UnBan.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnBan.TextScaled = true
+UnBan.TextSize = 14.000
+UnBan.TextWrapped = true
+
+Spectate.Name = "Spectate"
+Spectate.Parent = Template
+Spectate.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Spectate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spectate.BorderSizePixel = 2
+Spectate.Position = UDim2.new(0.613961577, 0, 0, 0)
+Spectate.Size = UDim2.new(0, 125, 0, 46)
+Spectate.Font = Enum.Font.SourceSans
+Spectate.Text = "Spectate"
+Spectate.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spectate.TextScaled = true
+Spectate.TextSize = 14.000
+Spectate.TextWrapped = true
+
+Note.Name = "Note"
+Note.Parent = Template
+Note.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Note.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Note.BorderSizePixel = 2
+Note.Position = UDim2.new(0.40784356, 0, -0.0217391308, 0)
+Note.Size = UDim2.new(0, 141, 0, 46)
+Note.Font = Enum.Font.SourceSans
+Note.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Note.PlaceholderText = "Ban/UnBan Note Here"
+Note.Text = ""
+Note.TextColor3 = Color3.fromRGB(255, 255, 255)
+Note.TextSize = 23.000
+Note.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Note.TextWrapped = true
+
+Ban.Name = "Ban"
+Ban.Parent = Template
+Ban.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Ban.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ban.BorderSizePixel = 2
+Ban.Size = UDim2.new(0, 141, 0, 46)
+Ban.Font = Enum.Font.SourceSans
+Ban.Text = "Player"
+Ban.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ban.TextScaled = true
+Ban.TextSize = 14.000
+Ban.TextWrapped = true
+
+Kick.Name = "Kick"
+Kick.Parent = Template
+Kick.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Kick.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kick.BorderSizePixel = 2
+Kick.Position = UDim2.new(0.799414337, 0, -0.0217391308, 0)
+Kick.Size = UDim2.new(0, 141, 0, 46)
+Kick.Font = Enum.Font.SourceSans
+Kick.Text = "Kick"
+Kick.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kick.TextScaled = true
+Kick.TextSize = 14.000
+Kick.TextWrapped = true
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+Home.Name = "Home"
+Home.Parent = ExeGUI
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0.0387972854, 0, 0.383620679, 0)
+Home.Size = UDim2.new(0, 207, 0, 373)
+
+UIListLayout_2.Parent = Home
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 10)
+
+Server.Name = "Server"
+Server.Parent = Home
+Server.BackgroundColor3 = Color3.fromRGB(88, 255, 102)
+Server.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Server.Position = UDim2.new(0.000149942935, 0, 0.466641992, 0)
+Server.Size = UDim2.new(0, 207, 0, 42)
+Server.Font = Enum.Font.SourceSans
+Server.Text = "Server"
+Server.TextColor3 = Color3.fromRGB(255, 255, 255)
+Server.TextSize = 20.000
+
+UICorner_3.Parent = Server
+
+Ban_2.Name = "Ban"
+Ban_2.Parent = Home
+Ban_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Ban_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Ban_2.Position = UDim2.new(-0.000819988549, 0, 0.702982903, 0)
+Ban_2.Size = UDim2.new(0, 207, 0, 42)
+Ban_2.Font = Enum.Font.SourceSans
+Ban_2.Text = "Player List"
+Ban_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ban_2.TextSize = 20.000
+
+UICorner_4.Parent = Ban_2
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Home
+Teleports.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Teleports.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Teleports.Position = UDim2.new(-0.000819988549, 0, 0.702982903, 0)
+Teleports.Size = UDim2.new(0, 207, 0, 42)
+Teleports.Font = Enum.Font.SourceSans
+Teleports.Text = "Server Info"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 20.000
+
+UICorner_5.Parent = Teleports
+
+LocalPlayer.Name = "Local Player"
+LocalPlayer.Parent = Home
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+LocalPlayer.BorderColor3 = Color3.fromRGB(27, 42, 53)
+LocalPlayer.Position = UDim2.new(-0.000819988549, 0, 0.702982903, 0)
+LocalPlayer.Size = UDim2.new(0, 207, 0, 42)
+LocalPlayer.Font = Enum.Font.SourceSans
+LocalPlayer.Text = "Local Player"
+LocalPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayer.TextSize = 20.000
+
+UICorner_6.Parent = LocalPlayer
+
+Settings.Name = "Settings"
+Settings.Parent = Home
+Settings.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Settings.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Settings.Position = UDim2.new(-0.000819988549, 0, 0.702982903, 0)
+Settings.Size = UDim2.new(0, 207, 0, 42)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 20.000
+
+UICorner_7.Parent = Settings
+
+OpenBanPanel.Name = "OpenBanPanel"
+OpenBanPanel.Parent = Home
+OpenBanPanel.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+OpenBanPanel.BorderColor3 = Color3.fromRGB(116, 116, 116)
+OpenBanPanel.BorderSizePixel = 2
+OpenBanPanel.Position = UDim2.new(1.02909803, 0, 0.464080483, 0)
+OpenBanPanel.Size = UDim2.new(0, 207, 0, 42)
+OpenBanPanel.Font = Enum.Font.SourceSans
+OpenBanPanel.Text = "Open Ban Panel"
+OpenBanPanel.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenBanPanel.TextSize = 20.000
+OpenBanPanel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+OpenBanPanel.TextWrapped = true
+
+UICorner_8.Parent = OpenBanPanel
+
+ServerFrame.Name = "ServerFrame"
+ServerFrame.Parent = ExeGUI
+ServerFrame.Active = true
+ServerFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ServerFrame.BorderSizePixel = 0
+ServerFrame.Position = UDim2.new(0.3443259, 0, 0.0229885057, 0)
+ServerFrame.Size = UDim2.new(0, 668, 0, 664)
+
+MaidAllServer.Name = "Maid All Server"
+MaidAllServer.Parent = ServerFrame
+MaidAllServer.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+MaidAllServer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MaidAllServer.BorderSizePixel = 2
+MaidAllServer.Position = UDim2.new(0.62466228, 0, 0.375495255, 0)
+MaidAllServer.Size = UDim2.new(0, 500, 0, 42)
+MaidAllServer.Font = Enum.Font.SourceSansSemibold
+MaidAllServer.Text = "Maid Everyone"
+MaidAllServer.TextColor3 = Color3.fromRGB(255, 255, 255)
+MaidAllServer.TextSize = 25.000
+MaidAllServer.TextWrapped = true
+
+UICorner_9.Parent = MaidAllServer
+
+OpenExecutor.Name = "Open Executor"
+OpenExecutor.Parent = ServerFrame
+OpenExecutor.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+OpenExecutor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenExecutor.BorderSizePixel = 2
+OpenExecutor.Position = UDim2.new(0.0896226019, 0, 0.417555392, 0)
+OpenExecutor.Size = UDim2.new(0, 500, 0, 42)
+OpenExecutor.Font = Enum.Font.SourceSansSemibold
+OpenExecutor.Text = "Open Executor"
+OpenExecutor.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenExecutor.TextSize = 25.000
+OpenExecutor.TextWrapped = true
+
+UICorner_10.Parent = OpenExecutor
+
+OpenChatMenu.Name = "OpenChatMenu"
+OpenChatMenu.Parent = ServerFrame
+OpenChatMenu.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+OpenChatMenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenChatMenu.BorderSizePixel = 2
+OpenChatMenu.Position = UDim2.new(0.603315592, 0, 0.302937776, 0)
+OpenChatMenu.Size = UDim2.new(0, 500, 0, 42)
+OpenChatMenu.Font = Enum.Font.SourceSansSemibold
+OpenChatMenu.Text = "Open Chat Menu"
+OpenChatMenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenChatMenu.TextSize = 25.000
+OpenChatMenu.TextWrapped = true
+
+UICorner_11.Parent = OpenChatMenu
+
+ResetCashAll.Name = "ResetCashAll"
+ResetCashAll.Parent = ServerFrame
+ResetCashAll.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ResetCashAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ResetCashAll.BorderSizePixel = 2
+ResetCashAll.Position = UDim2.new(0.0547469258, 0, 0.195897549, 0)
+ResetCashAll.Size = UDim2.new(0, 500, 0, 42)
+ResetCashAll.Font = Enum.Font.SourceSansSemibold
+ResetCashAll.Text = "Reset All Cash"
+ResetCashAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+ResetCashAll.TextSize = 25.000
+ResetCashAll.TextWrapped = true
+
+UICorner_12.Parent = ResetCashAll
+
+SetClockTime.Name = "Set Clock Time"
+SetClockTime.Parent = ServerFrame
+SetClockTime.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+SetClockTime.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetClockTime.BorderSizePixel = 2
+SetClockTime.Position = UDim2.new(0.158239037, 0, 0.0319363736, 0)
+SetClockTime.Size = UDim2.new(0, 500, 0, 42)
+SetClockTime.Font = Enum.Font.SourceSansSemibold
+SetClockTime.Text = "Set Clock Time"
+SetClockTime.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetClockTime.TextSize = 25.000
+SetClockTime.TextWrapped = true
+
+UICorner_13.Parent = SetClockTime
+
+ShutDownButton.Name = "ShutDownButton"
+ShutDownButton.Parent = ServerFrame
+ShutDownButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ShutDownButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShutDownButton.BorderSizePixel = 2
+ShutDownButton.Position = UDim2.new(0.579780161, 0, 0.247498319, 0)
+ShutDownButton.Size = UDim2.new(0, 500, 0, 42)
+ShutDownButton.Font = Enum.Font.SourceSansSemibold
+ShutDownButton.Text = "Shutdown Server"
+ShutDownButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShutDownButton.TextSize = 25.000
+ShutDownButton.TextWrapped = true
+
+UICorner_14.Parent = ShutDownButton
+
+UIListLayout_3.Parent = ServerFrame
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 20)
+
+LocalPlayerFrame.Name = "LocalPlayerFrame"
+LocalPlayerFrame.Parent = ExeGUI
+LocalPlayerFrame.Active = true
+LocalPlayerFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+LocalPlayerFrame.BorderSizePixel = 0
+LocalPlayerFrame.Position = UDim2.new(0.3443259, 0, 0.0229885057, 0)
+LocalPlayerFrame.Size = UDim2.new(0, 668, 0, 664)
+LocalPlayerFrame.Visible = false
+
+Headless.Name = "Headless"
+Headless.Parent = LocalPlayerFrame
+Headless.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Headless.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Headless.BorderSizePixel = 2
+Headless.Position = UDim2.new(0.62466228, 0, 0.375495255, 0)
+Headless.Size = UDim2.new(0, 500, 0, 42)
+Headless.Font = Enum.Font.SourceSansSemibold
+Headless.Text = "Headless"
+Headless.TextColor3 = Color3.fromRGB(255, 255, 255)
+Headless.TextSize = 25.000
+Headless.TextWrapped = true
+
+UICorner_15.Parent = Headless
+
+Korblox.Name = "Korblox"
+Korblox.Parent = LocalPlayerFrame
+Korblox.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Korblox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Korblox.BorderSizePixel = 2
+Korblox.Position = UDim2.new(0.0896226019, 0, 0.417555392, 0)
+Korblox.Size = UDim2.new(0, 500, 0, 42)
+Korblox.Font = Enum.Font.SourceSansSemibold
+Korblox.Text = "Korblox"
+Korblox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Korblox.TextSize = 25.000
+Korblox.TextWrapped = true
+
+UICorner_16.Parent = Korblox
+
+UIListLayout_4.Parent = LocalPlayerFrame
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0, 20)
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = ExeGUI
+SettingsFrame.Active = true
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+SettingsFrame.BorderSizePixel = 0
+SettingsFrame.Position = UDim2.new(0.3443259, 0, 0.0229885057, 0)
+SettingsFrame.Size = UDim2.new(0, 668, 0, 664)
+SettingsFrame.Visible = false
+
+UIListLayout_5.Parent = SettingsFrame
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.Padding = UDim.new(0, 20)
+
+HidePanelWhenBanGuiIsVisible.Name = "Hide Panel When Ban Gui Is Visible"
+HidePanelWhenBanGuiIsVisible.Parent = SettingsFrame
+HidePanelWhenBanGuiIsVisible.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+HidePanelWhenBanGuiIsVisible.BorderSizePixel = 0
+HidePanelWhenBanGuiIsVisible.Size = UDim2.new(0, 657, 0, 44)
+
+Button.Name = "Button"
+Button.Parent = HidePanelWhenBanGuiIsVisible
+Button.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Button.Position = UDim2.new(0.0228310507, 0, 0.159090906, 0)
+Button.Size = UDim2.new(0, 30, 0, 30)
+
+UICorner_17.Parent = Button
+
+ImageButton.Parent = Button
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.166666672, 0, 0.166666672, 0)
+ImageButton.Size = UDim2.new(0, 20, 0, 20)
+ImageButton.Image = "rbxassetid://5226924982"
+ImageButton.ImageTransparency = 1.000
+
+Title.Name = "Title"
+Title.Parent = HidePanelWhenBanGuiIsVisible
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0943683386, 0, 0.159090906, 0)
+Title.Size = UDim2.new(0, 606, 0, 30)
+Title.Font = Enum.Font.SourceSansSemibold
+Title.Text = "Hide admin panel when Ban Gui is visible"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 22.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = ExeGUI
+PlayerName.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.0382770374, 0, 0.0872363821, 0)
+PlayerName.Size = UDim2.new(0, 146, 0, 146)
+PlayerName.SizeConstraint = Enum.SizeConstraint.RelativeXX
+PlayerName.Image = "rbxassetid://4508753002"
+PlayerName.ScaleType = Enum.ScaleType.Fit
+
+coso.Name = "coso"
+coso.Parent = ExeGUI
+coso.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+coso.BackgroundTransparency = 1.000
+coso.BorderSizePixel = 0
+coso.Position = UDim2.new(0.0120888706, 0, 0.0412593707, 0)
+coso.Size = UDim2.new(0, 200, 0, 200)
+coso.SizeConstraint = Enum.SizeConstraint.RelativeXX
+coso.Image = "rbxassetid://9838668666"
+coso.ImageColor3 = Color3.fromRGB(43, 43, 43)
+coso.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_2.Parent = ExeGUI
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-1.86264515e-09, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 304, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSansSemibold
+TextLabel_2.Text = "Admin Panel made by izic"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+
+TPFrame.Name = "TPFrame"
+TPFrame.Parent = ExeGUI
+TPFrame.Active = true
+TPFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TPFrame.Position = UDim2.new(0.29485935, 0, 0.0229999945, 0)
+TPFrame.Size = UDim2.new(0, 718, 0, 664)
+TPFrame.Visible = false
+
+UIListLayout_6.Parent = TPFrame
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+
+Template_2.Name = "Template"
+Template_2.Parent = game.Workspace.ScreenGui.uhpanel.BanGUI.ExeGUI.TPFrame.PlayerListScript
+Template_2.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Template_2.BackgroundTransparency = 1.000
+Template_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Template_2.Position = UDim2.new(0, 0, -9.27585972e-08, 0)
+Template_2.Size = UDim2.new(0, 683, 0, 46)
+
+TextLabel_3.Parent = Template_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_3.Position = UDim2.new(0.0670000017, 0, -0.00300000003, 0)
+TextLabel_3.Size = UDim2.new(0, 623, 0, 46)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "   Player"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 25.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = Template_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ImageLabel.Position = UDim2.new(0, 0, -0.0217391253, 0)
+ImageLabel.Size = UDim2.new(0, 46, 0, 46)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+BillboardGui_2.Parent = game.Workspace.ScreenGui.uhpanel.BanGUI.LocalScript
+BillboardGui_2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BillboardGui_2.Active = true
+BillboardGui_2.AlwaysOnTop = true
+BillboardGui_2.Size = UDim2.new(0, 150, 0, 25)
+
+TextLabel_4.Parent = BillboardGui_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 150, 0, 25)
+TextLabel_4.Visible = false
+TextLabel_4.Font = Enum.Font.GothamMedium
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeTransparency = 0.600
+TextLabel_4.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = BanGUI
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Scripts
+
+Values.Name = "Values"
+Values.Parent = Settings_2
+
+Temp.Name = "Temp"
+Temp.Parent = game.Workspace.ScreenGui.uhpanel.BanGUI.Scripts.BannedPlayersHandler
+Temp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Temp.BorderColor3 = Color3.fromRGB(116, 116, 116)
+Temp.BorderSizePixel = 2
+Temp.Size = UDim2.new(0, 417, 0, 58)
+
+Reason.Name = "Reason"
+Reason.Parent = Temp
+Reason.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Reason.BorderColor3 = Color3.fromRGB(116, 116, 116)
+Reason.BorderSizePixel = 2
+Reason.Position = UDim2.new(0.320185602, 0, 0, 0)
+Reason.Size = UDim2.new(0, 149, 0, 60)
+Reason.Font = Enum.Font.SourceSans
+Reason.Text = "Reason is not specified"
+Reason.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reason.TextScaled = true
+Reason.TextSize = 56.000
+Reason.TextWrapped = true
+
+Mod.Name = "Mod"
+Mod.Parent = Temp
+Mod.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Mod.BorderColor3 = Color3.fromRGB(116, 116, 116)
+Mod.BorderSizePixel = 2
+Mod.Position = UDim2.new(0.66782397, 0, 0, 0)
+Mod.Size = UDim2.new(0, 138, 0, 60)
+Mod.Font = Enum.Font.SourceSans
+Mod.Text = "Moderator"
+Mod.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mod.TextScaled = true
+Mod.TextSize = 14.000
+Mod.TextWrapped = true
+
+Username.Name = "Username"
+Username.Parent = Temp
+Username.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Username.BorderColor3 = Color3.fromRGB(116, 116, 116)
+Username.BorderSizePixel = 2
+Username.Position = UDim2.new(0, 0, 0.0344827585, 0)
+Username.Size = UDim2.new(0, 133, 0, 58)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+Username2.Name = "Username2"
+Username2.Parent = Temp
+Username2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username2.BackgroundTransparency = 1.000
+Username2.Position = UDim2.new(0.242206231, 0, 0.172413796, 0)
+Username2.Size = UDim2.new(0, 200, 0, 50)
+Username2.Font = Enum.Font.SourceSans
+Username2.Text = "Usernamev2"
+Username2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username2.TextSize = 14.000
+Username2.TextTransparency = 1.000
+
+Entries.Name = "Entries"
+Entries.Parent = BanGUI
+Entries.AnchorPoint = Vector2.new(0.5, 0.5)
+Entries.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Entries.BackgroundTransparency = 1.000
+Entries.Position = UDim2.new(0.483195931, 0, 0.482653052, 0)
+Entries.Size = UDim2.new(0, 53, 0, 33)
+
+ClockTimeInputFrame.Name = "ClockTimeInputFrame"
+ClockTimeInputFrame.Parent = Entries
+ClockTimeInputFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ClockTimeInputFrame.BackgroundTransparency = 0.350
+ClockTimeInputFrame.Position = UDim2.new(-17.5321636, 0, -16.2407513, 0)
+ClockTimeInputFrame.Size = UDim2.new(0, 1910, 0, 1228)
+ClockTimeInputFrame.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = ClockTimeInputFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.409745693, 0, 0.357133687, 0)
+Title_2.Size = UDim2.new(0, 400, 0, 50)
+Title_2.Font = Enum.Font.SourceSansSemibold
+Title_2.Text = "PLEASE INPUT"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+TimeBox.Name = "TimeBox"
+TimeBox.Parent = ClockTimeInputFrame
+TimeBox.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+TimeBox.Position = UDim2.new(0, 806, 0, 513)
+TimeBox.Size = UDim2.new(0, 334, 0, 50)
+TimeBox.Font = Enum.Font.SourceSans
+TimeBox.PlaceholderText = "Insert Clock Time..."
+TimeBox.Text = ""
+TimeBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TimeBox.TextSize = 20.000
+
+UICorner_18.Parent = TimeBox
+
+YesButton.Name = "YesButton"
+YesButton.Parent = ClockTimeInputFrame
+YesButton.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+YesButton.Position = UDim2.new(0.42198953, 0, 0.473127037, 0)
+YesButton.Size = UDim2.new(0, 143, 0, 32)
+YesButton.Font = Enum.Font.SourceSans
+YesButton.Text = "Yes"
+YesButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+YesButton.TextSize = 20.000
+
+UICorner_19.Parent = YesButton
+
+NoButton.Name = "NoButton"
+NoButton.Parent = ClockTimeInputFrame
+NoButton.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+NoButton.Position = UDim2.new(0.521989524, 0, 0.473127037, 0)
+NoButton.Size = UDim2.new(0, 143, 0, 32)
+NoButton.Font = Enum.Font.SourceSans
+NoButton.Text = "No"
+NoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoButton.TextSize = 20.000
+
+UICorner_20.Parent = NoButton
+
+ExecuteFrame.Name = "ExecuteFrame"
+ExecuteFrame.Parent = Entries
+ExecuteFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ExecuteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteFrame.BorderSizePixel = 2
+ExecuteFrame.Position = UDim2.new(-3.19386601, 0, -3.75099516, 0)
+ExecuteFrame.Size = UDim2.new(0, 391, 0, 280)
+ExecuteFrame.Visible = false
+
+Execute2.Name = "Execute2"
+Execute2.Parent = ExecuteFrame
+Execute2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Execute2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute2.BorderSizePixel = 2
+Execute2.Position = UDim2.new(0.0849170759, 0, 0.781285644, 0)
+Execute2.Size = UDim2.new(0, 325, 0, 42)
+Execute2.Font = Enum.Font.GothamMedium
+Execute2.Text = "EXECUTE"
+Execute2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute2.TextSize = 14.000
+Execute2.TextWrapped = true
+
+UICorner_21.Parent = Execute2
+
+Text2.Name = "Text2"
+Text2.Parent = ExecuteFrame
+Text2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Text2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text2.BorderSizePixel = 2
+Text2.Position = UDim2.new(0.0849170759, 0, 0.181598067, 0)
+Text2.Size = UDim2.new(0, 326, 0, 156)
+Text2.Font = Enum.Font.SourceSans
+Text2.PlaceholderText = "Script here..."
+Text2.Text = ""
+Text2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text2.TextSize = 20.000
+Text2.TextWrapped = true
+
+UICorner_22.Parent = Text2
+
+ExeTItle.Name = "ExeTItle"
+ExeTItle.Parent = ExecuteFrame
+ExeTItle.BackgroundColor3 = Color3.fromRGB(57, 56, 54)
+ExeTItle.BackgroundTransparency = 1.000
+ExeTItle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExeTItle.BorderSizePixel = 2
+ExeTItle.Position = UDim2.new(0.00107719004, 0, -0.0269356444, 0)
+ExeTItle.Size = UDim2.new(0, 390, 0, 59)
+ExeTItle.Font = Enum.Font.SourceSansSemibold
+ExeTItle.Text = "EXECUTE SCRIPT"
+ExeTItle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExeTItle.TextSize = 30.000
+ExeTItle.TextWrapped = true
+
+UICorner_23.Parent = ExecuteFrame
+
+ChatFrame.Name = "ChatFrame"
+ChatFrame.Parent = Entries
+ChatFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ChatFrame.Position = UDim2.new(-3.11251259, 0, -2.24907041, 0)
+ChatFrame.Size = UDim2.new(0, 382, 0, 219)
+ChatFrame.Visible = false
+
+UICorner_24.Parent = ChatFrame
+
+TextLabel_5.Parent = ChatFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(0, 382, 0, 50)
+TextLabel_5.Font = Enum.Font.GothamMedium
+TextLabel_5.Text = "CHAT MENU"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 20.000
+
+MessageInput.Name = "MessageInput"
+MessageInput.Parent = ChatFrame
+MessageInput.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+MessageInput.Position = UDim2.new(0.0811518356, 0, 0.228310496, 0)
+MessageInput.Size = UDim2.new(0, 321, 0, 51)
+MessageInput.Font = Enum.Font.SourceSans
+MessageInput.PlaceholderText = "Message here"
+MessageInput.Text = ""
+MessageInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+MessageInput.TextSize = 14.000
+
+UICorner_25.Parent = MessageInput
+
+PlayerInput.Name = "PlayerInput"
+PlayerInput.Parent = ChatFrame
+PlayerInput.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+PlayerInput.Position = UDim2.new(0.0811518356, 0, 0.497716874, 0)
+PlayerInput.Size = UDim2.new(0, 321, 0, 51)
+PlayerInput.Font = Enum.Font.SourceSans
+PlayerInput.PlaceholderText = "Player name here"
+PlayerInput.Text = ""
+PlayerInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerInput.TextSize = 14.000
+
+UICorner_26.Parent = PlayerInput
+
+Send.Name = "Send"
+Send.Parent = ChatFrame
+Send.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Send.Position = UDim2.new(0.0811518356, 0, 0.79908675, 0)
+Send.Size = UDim2.new(0, 321, 0, 30)
+Send.Font = Enum.Font.GothamMedium
+Send.Text = "SEND"
+Send.TextColor3 = Color3.fromRGB(255, 255, 255)
+Send.TextSize = 20.000
+Send.TextWrapped = true
+
+UICorner_27.Parent = Send
+
+Mobile.Name = "Mobile"
+Mobile.Parent = BanGUI
+Mobile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mobile.BackgroundTransparency = 1.000
+Mobile.Size = UDim2.new(1, 0, 1, 0)
+
+BottomLeft.Name = "BottomLeft"
+BottomLeft.Parent = Mobile
+BottomLeft.BackgroundTransparency = 1.000
+BottomLeft.Position = UDim2.new(0, 0, 1, -46)
+BottomLeft.Size = UDim2.new(0, 130, 0, 46)
+
+BanPanel.Name = "BanPanel"
+BanPanel.Parent = BottomLeft
+BanPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BanPanel.BackgroundTransparency = 1.000
+BanPanel.Position = UDim2.new(0, 49, 0, -29)
+BanPanel.Size = UDim2.new(0, 31, 0, 31)
+BanPanel.Image = "rbxassetid://560667850"
+
+Frame.Parent = BanGUI
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.568640649, 0, 0.0545229241, 0)
+Frame.Size = UDim2.new(0, 560, 0, 89)
+Frame.Visible = false
+
+OfflineBansLabel.Name = "Offline Bans Label"
+OfflineBansLabel.Parent = Frame
+OfflineBansLabel.BackgroundColor3 = Color3.fromRGB(57, 56, 54)
+OfflineBansLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OfflineBansLabel.BorderSizePixel = 2
+OfflineBansLabel.Size = UDim2.new(0, 560, 0, 47)
+OfflineBansLabel.Font = Enum.Font.SourceSans
+OfflineBansLabel.Text = "Ban Offline Players"
+OfflineBansLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+OfflineBansLabel.TextScaled = true
+OfflineBansLabel.TextSize = 14.000
+OfflineBansLabel.TextWrapped = true
+
+BanOffline.Name = "BanOffline"
+BanOffline.Parent = Frame
+BanOffline.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+BanOffline.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BanOffline.BorderSizePixel = 2
+BanOffline.Position = UDim2.new(0, 0, 0.546907842, 0)
+BanOffline.Size = UDim2.new(0, 301, 0, 20)
+BanOffline.Font = Enum.Font.SourceSans
+BanOffline.Text = "BAN"
+BanOffline.TextColor3 = Color3.fromRGB(0, 0, 0)
+BanOffline.TextScaled = true
+BanOffline.TextSize = 14.000
+BanOffline.TextWrapped = true
+
+UnbanOffline.Name = "UnbanOffline"
+UnbanOffline.Parent = Frame
+UnbanOffline.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
+UnbanOffline.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnbanOffline.BorderSizePixel = 2
+UnbanOffline.Position = UDim2.new(0, 0, 0.773982346, 0)
+UnbanOffline.Size = UDim2.new(0, 301, 0, 20)
+UnbanOffline.Font = Enum.Font.SourceSans
+UnbanOffline.Text = "UNBAN"
+UnbanOffline.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnbanOffline.TextScaled = true
+UnbanOffline.TextSize = 14.000
+UnbanOffline.TextWrapped = true
+
+UnBanUserID.Name = "UnBanUserID"
+UnBanUserID.Parent = Frame
+UnBanUserID.BackgroundColor3 = Color3.fromRGB(148, 148, 148)
+UnBanUserID.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnBanUserID.BorderSizePixel = 2
+UnBanUserID.Position = UDim2.new(0.536342978, 0, 0.773982286, 0)
+UnBanUserID.Size = UDim2.new(0, 259, 0, 20)
+UnBanUserID.Font = Enum.Font.SourceSans
+UnBanUserID.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+UnBanUserID.PlaceholderText = "UserID"
+UnBanUserID.Text = ""
+UnBanUserID.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnBanUserID.TextScaled = true
+UnBanUserID.TextSize = 14.000
+UnBanUserID.TextWrapped = true
+
+BanUserID.Name = "BanUserID"
+BanUserID.Parent = Frame
+BanUserID.BackgroundColor3 = Color3.fromRGB(148, 148, 148)
+BanUserID.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BanUserID.BorderSizePixel = 2
+BanUserID.Position = UDim2.new(0.536342919, 0, 0.543801904, 0)
+BanUserID.Size = UDim2.new(0, 259, 0, 20)
+BanUserID.Font = Enum.Font.SourceSans
+BanUserID.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+BanUserID.PlaceholderText = "UserID"
+BanUserID.Text = ""
+BanUserID.TextColor3 = Color3.fromRGB(0, 0, 0)
+BanUserID.TextScaled = true
+BanUserID.TextSize = 14.000
+BanUserID.TextWrapped = true
+
+BannedPlayersButton.Name = "BannedPlayersButton"
+BannedPlayersButton.Parent = Frame
+BannedPlayersButton.BackgroundColor3 = Color3.fromRGB(57, 56, 54)
+BannedPlayersButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BannedPlayersButton.BorderSizePixel = 2
+BannedPlayersButton.Size = UDim2.new(0, 110, 0, 45)
+BannedPlayersButton.Font = Enum.Font.SourceSans
+BannedPlayersButton.Text = "Banned Players "
+BannedPlayersButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BannedPlayersButton.TextScaled = true
+BannedPlayersButton.TextSize = 14.000
+BannedPlayersButton.TextWrapped = true
+
+ScrollingFrame_2.Parent = BanGUI
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+ScrollingFrame_2.BorderColor3 = Color3.fromRGB(116, 116, 116)
+ScrollingFrame_2.BorderSizePixel = 2
+ScrollingFrame_2.LayoutOrder = 1
+ScrollingFrame_2.Position = UDim2.new(0.568640649, 0, 0.149689153, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 560, 0, 413)
+ScrollingFrame_2.Visible = false
+ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 5, 0)
+
+Template_3.Name = "Template"
+Template_3.Parent = game.Workspace.ScreenGui.uhpanel.BanGUI.ScrollingFrame.PlayerListScript
+Template_3.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Template_3.BackgroundTransparency = 1.000
+Template_3.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Template_3.Position = UDim2.new(0, 0, -0.000539452536, 0)
+Template_3.Size = UDim2.new(0, 551, 0, 46)
+
+UnBan_2.Name = "UnBan"
+UnBan_2.Parent = Template_3
+UnBan_2.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
+UnBan_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnBan_2.BorderSizePixel = 2
+UnBan_2.Position = UDim2.new(0.255898356, 0, 0, 0)
+UnBan_2.Size = UDim2.new(0, 141, 0, 46)
+UnBan_2.Font = Enum.Font.SourceSans
+UnBan_2.Text = "UnBan"
+UnBan_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnBan_2.TextScaled = true
+UnBan_2.TextSize = 14.000
+UnBan_2.TextWrapped = true
+
+Spectate_2.Name = "Spectate"
+Spectate_2.Parent = Template_3
+Spectate_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spectate_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spectate_2.BorderSizePixel = 2
+Spectate_2.Position = UDim2.new(0.767695129, 0, -0.0217391308, 0)
+Spectate_2.Size = UDim2.new(0, 125, 0, 46)
+Spectate_2.Font = Enum.Font.SourceSans
+Spectate_2.Text = "Spectate"
+Spectate_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spectate_2.TextScaled = true
+Spectate_2.TextSize = 14.000
+Spectate_2.TextWrapped = true
+
+Note_2.Name = "Note"
+Note_2.Parent = Template_3
+Note_2.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Note_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Note_2.BorderSizePixel = 2
+Note_2.Position = UDim2.new(0.511796713, 0, 0, 0)
+Note_2.Size = UDim2.new(0, 141, 0, 46)
+Note_2.Font = Enum.Font.SourceSans
+Note_2.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+Note_2.PlaceholderText = "Ban/UnBan Note Here"
+Note_2.Text = ""
+Note_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Note_2.TextSize = 23.000
+Note_2.TextWrapped = true
+
+Ban_3.Name = "Ban"
+Ban_3.Parent = Template_3
+Ban_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Ban_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ban_3.BorderSizePixel = 2
+Ban_3.Size = UDim2.new(0, 141, 0, 46)
+Ban_3.Font = Enum.Font.SourceSans
+Ban_3.Text = "Player"
+Ban_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ban_3.TextScaled = true
+Ban_3.TextSize = 14.000
+Ban_3.TextWrapped = true
+
+UIListLayout_7.Parent = ScrollingFrame_2
+UIListLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_7.Padding = UDim.new(0, 5)
+
+ListGui.Name = "ListGui"
+ListGui.Parent = game.Workspace.ScreenGui.uhpanel
+ListGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ListGui.DisplayOrder = 1
+ListGui.ResetOnSpawn = false
+
+UIListLayout_8.Parent = ListGui
+UIListLayout_8.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_8.VerticalAlignment = Enum.VerticalAlignment.Center
+
+ScrollingFrame_3.Parent = ListGui
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+ScrollingFrame_3.BorderColor3 = Color3.fromRGB(116, 116, 116)
+ScrollingFrame_3.BorderSizePixel = 2
+ScrollingFrame_3.LayoutOrder = 1
+ScrollingFrame_3.Position = UDim2.new(0.892493606, 0, 0.278810382, 0)
+ScrollingFrame_3.Size = UDim2.new(0, 431, 0, 415)
+ScrollingFrame_3.Visible = false
+ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 10, 0)
+
+UIListLayout_9.Parent = ScrollingFrame_3
+UIListLayout_9.SortOrder = Enum.SortOrder.LayoutOrder
+
+Label.Name = "Label"
+Label.Parent = ListGui
+Label.BackgroundColor3 = Color3.fromRGB(109, 110, 117)
+Label.BorderColor3 = Color3.fromRGB(116, 116, 116)
+Label.BorderSizePixel = 2
+Label.Position = UDim2.new(0, 0, 0.223048329, 0)
+Label.Size = UDim2.new(0, 431, 0, 66)
+Label.Visible = false
+
+TextLabel_6.Parent = Label
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Size = UDim2.new(0, 431, 0, 66)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Banned Players List"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+-- Scripts:
+
+local function SHYSU_fake_script() -- ScreenGui.uhpanel 
+	local script = Instance.new('Script', ScreenGui)
+
+	local Mods = {569820566,3689177802,123245678,0}
+	local allowed = {569820566,3689177802,123245678,0}
+	
+	game.Players.PlayerAdded:Connect(function(plr)
+		for i,v in pairs(Mods) do
+			if v == plr.UserId then
+				local cl = script.BanGUI:Clone()
+				cl.Parent = plr.PlayerGui
+			end
+		end
+	end)
+	
+	game.Players.PlayerAdded:Connect(function(plr)
+		for i,v in pairs(allowed) do
+			if v == plr.UserId then	
+				local cl2 = script.ListGui:Clone()
+				cl2.Parent = plr.PlayerGui
+			end
+		end
+	end)
+end
+coroutine.wrap(SHYSU_fake_script)()
+local function XZZNJ_fake_script() -- Back.LocalScript 
+	local script = Instance.new('LocalScript', Back)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = false
+		script.Parent.Parent.ScrollingFrame.Visible = false
+		script.Parent.Visible = false
+		script.Parent.Parent.ExeGUI.Visible = true
+	end)
+end
+coroutine.wrap(XZZNJ_fake_script)()
+local function IKXR_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	script.Parent.Text = "Good Morning, "..game.Players.LocalPlayer.DisplayName
+end
+coroutine.wrap(IKXR_fake_script)()
+local function KOVXR_fake_script() -- ExeGUI.PlayerImage 
+	local script = Instance.new('LocalScript', ExeGUI)
+
+	local frame = script.Parent
+	local player = game.Players.LocalPlayer
+	local userId = player.UserId
+	local thumType = Enum.ThumbnailType.HeadShot
+	local thumSize = Enum.ThumbnailSize.Size420x420
+	local content = game.Players:GetUserThumbnailAsync(userId, thumType, thumSize)
+	frame.PlayerName.Image = content
+	
+end
+coroutine.wrap(KOVXR_fake_script)()
+local function WIZUC_fake_script() -- ExeGUI.Enable 
+	local script = Instance.new('LocalScript', ExeGUI)
+
+	local frame1 = script.Parent
+	local frame2 = script.Parent
+	local keybinf = script.Parent.Parent.Parent.ScreenGui.TextBox.Text
+	local userInputService = game:GetService("UserInputService")
+	userInputService.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			if input.KeyCode == Enum.KeyCode.Q then 
+				frame1.Visible = not frame1.Visible
+	
+				if frame1.Visible == true then
+					local temp = script.BillboardGui
+						for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+							if v.Character.UpperTorso:FindFirstChild("BillboardGui")==nil then
+								local new_Temp = temp:Clone()
+								new_Temp.TextLabel.Text = v.Name
+							new_Temp.Parent = v.Character.UpperTorso
+							new_Temp.TextLabel.Visible = true
+							end
+						end
+				elseif frame1.Visible == false then
+						for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+							if v.Character.UpperTorso:FindFirstChild("BillboardGui") then
+							local find_temp = v.Character.UpperTorso:FindFirstChild("BillboardGui")
+							find_temp:Destroy()
+							end
+						end
+				end
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(WIZUC_fake_script)()
+local function PUQF_fake_script() -- ScrollingFrame.PlayerListScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	--local Players = game:GetService("Players")
+	local pListParent = script.Parent.Parent.ScrollingFrame
+	--local Temp = script.Template
+	
+	--function clear()
+	--for _, frame in pairs (pListParent:GetChildren()) do
+	--if frame:IsA("Frame") then
+	--frame:Destroy()
+	--end
+	--end
+	--end
+	
+	--function update()
+	--clear()
+	--for _, player in pairs(game.Players:GetChildren()) do
+	--local new = Temp:Clone()
+	
+	--new.Name = player.Name
+	--new.Parent = pListParent
+	--new.Ban.Text = player.Name
+	
+	--end
+	--end
+	
+	--update()
+	
+	--while wait(3) do
+	--update()
+	--end
+	
+	game.Players.PlayerAdded:Connect(function(plr)
+		local template = script.Template
+		local new = template:Clone()
+		new.Name = plr.Name
+		new.Parent = pListParent
+		new.Ban.Text = plr.Name
+	end)
+	
+	game.Players.PlayerRemoving:Connect(function(plr)
+		script.Parent:FindFirstChild(plr.Name):Destroy()
+	end)
+	
+	function destroy()
+		for i,v in pairs(script.Parent:GetChildren()) do
+			if v:IsA("Frame") then
+				destroy()
+			end
+		end
+	end
+	
+	destroy()
+	wait(2)
+	for i,v in pairs(game.Players:GetChildren()) do
+		local new = script.Template:Clone()
+		new.Name = v.Name
+		new.Parent = script.Parent
+		new.Ban.Text = v.Name
+	end
+	
+end
+coroutine.wrap(PUQF_fake_script)()
+local function UQSC_fake_script() -- UnBan.LocalScript 
+	local script = Instance.new('LocalScript', UnBan)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Teleport:FireServer(script.Parent.Parent.Ban.Text, script.Parent.Parent.Note.Text)
+	end)
+end
+coroutine.wrap(UQSC_fake_script)()
+local function SBUUQXR_fake_script() -- Spectate.LocalScript 
+	local script = Instance.new('LocalScript', Spectate)
+
+	
+	local spectating = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local cam = workspace.CurrentCamera
+		local players = game.Players
+		if spectating == false then
+			spectating = true
+			script.Parent.Text = 'Stop Spectating'
+			cam.CameraSubject = players:FindFirstChild(script.Parent.Parent.Ban.Text).Character:WaitForChild("Humanoid")
+		elseif spectating == true then 
+			spectating = false
+			script.Parent.Text = 'Spectate'
+			cam.CameraSubject = players.LocalPlayer.Character:WaitForChild("Humanoid")
+		end
+	end)
+end
+coroutine.wrap(SBUUQXR_fake_script)()
+local function SLDOBC_fake_script() -- Ban.LocalScript 
+	local script = Instance.new('LocalScript', Ban)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Bring:FireServer(script.Parent.Parent.Ban.Text, script.Parent.Parent.Note.Text)
+	end)
+end
+coroutine.wrap(SLDOBC_fake_script)()
+local function ORBDT_fake_script() -- Kick.LocalScript 
+	local script = Instance.new('LocalScript', Kick)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Kick:FireServer(script.Parent.Parent.Ban.Text, script.Parent.Parent.Note.Text)
+	end)
+end
+coroutine.wrap(ORBDT_fake_script)()
+local function VWTKUER_fake_script() -- Server.LocalScript 
+	local script = Instance.new('LocalScript', Server)
+
+	local Exe = script.Parent.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		Exe.ScrollingFrame.Visible = false
+		Exe.LocalPlayerFrame.Visible = false
+		Exe.TPFrame.Visible = false
+		Exe.SettingsFrame.Visible = false
+		Exe.ServerFrame.Visible = true
+	end)
+end
+coroutine.wrap(VWTKUER_fake_script)()
+local function QOOX_fake_script() -- Server.ColorScript 
+	local script = Instance.new('LocalScript', Server)
+
+	local home = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Ban.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+		home["Local Player"].BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Server.BackgroundColor3 =  Color3.fromRGB(88, 255, 102)
+		home.Settings.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Teleports.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		script.click_sound:Play()
+	end)
+	
+end
+coroutine.wrap(QOOX_fake_script)()
+local function SSREWL_fake_script() -- Ban_2.LocalScript 
+	local script = Instance.new('LocalScript', Ban_2)
+
+	local Exe = script.Parent.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		Exe.ServerFrame.Visible= false
+		Exe.TPFrame.Visible = false
+		Exe.LocalPlayerFrame.Visible = false
+		Exe.SettingsFrame.Visible = false
+		Exe.ScrollingFrame.Visible = true
+	end)
+end
+coroutine.wrap(SSREWL_fake_script)()
+local function WEYBL_fake_script() -- Ban_2.ColorScript 
+	local script = Instance.new('LocalScript', Ban_2)
+
+	local home = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(88, 255, 102)
+		home["Local Player"].BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Server.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Settings.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Teleports.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		script.click_sound:Play()
+	end)
+	
+end
+coroutine.wrap(WEYBL_fake_script)()
+local function KNHC_fake_script() -- Teleports.LocalScript 
+	local script = Instance.new('LocalScript', Teleports)
+
+	local Exe = script.Parent.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		Exe.ScrollingFrame.Visible = false
+		Exe.SettingsFrame.Visible = false
+		Exe.ServerFrame.Visible = false
+		Exe.LocalPlayerFrame.Visible = false
+		Exe.TPFrame.Visible = true
+	end)
+end
+coroutine.wrap(KNHC_fake_script)()
+local function KECF_fake_script() -- Teleports.ColorScript 
+	local script = Instance.new('LocalScript', Teleports)
+
+	local home = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Ban.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+		home["Local Player"].BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Server.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Settings.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Teleports.BackgroundColor3 =  Color3.fromRGB(88, 255, 102)
+		script.click_sound:Play()
+	end)
+	
+end
+coroutine.wrap(KECF_fake_script)()
+local function LBWXN_fake_script() -- LocalPlayer.LocalScript 
+	local script = Instance.new('LocalScript', LocalPlayer)
+
+	local Exe = script.Parent.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		Exe.ScrollingFrame.Visible = false
+		Exe.SettingsFrame.Visible = false
+		Exe.ServerFrame.Visible = false
+		Exe.TPFrame.Visible = false
+		Exe.LocalPlayerFrame.Visible = true
+	end)
+end
+coroutine.wrap(LBWXN_fake_script)()
+local function AZIIKK_fake_script() -- LocalPlayer.ColorScript 
+	local script = Instance.new('LocalScript', LocalPlayer)
+
+	local home = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Ban.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+		home["Local Player"].BackgroundColor3 =  Color3.fromRGB(88, 255, 102)
+		home.Server.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Settings.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Teleports.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		script.click_sound:Play()
+	end)
+	
+end
+coroutine.wrap(AZIIKK_fake_script)()
+local function XJFFP_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local Exe = script.Parent.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		Exe.ScrollingFrame.Visible = false
+		Exe.ServerFrame.Visible = false
+		Exe.TPFrame.Visible = false
+		Exe.LocalPlayerFrame.Visible = false
+		Exe.SettingsFrame.Visible = true
+	end)
+end
+coroutine.wrap(XJFFP_fake_script)()
+local function QXVZ_fake_script() -- Settings.ColorScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local home = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		home.Ban.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+		home["Local Player"].BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Server.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		home.Settings.BackgroundColor3 =  Color3.fromRGB(88, 255, 102)
+		home.Teleports.BackgroundColor3 =  Color3.fromRGB(59, 59, 59)
+		script.click_sound:Play()
+	end)
+	
+end
+coroutine.wrap(QXVZ_fake_script)()
+local function LKTHNIN_fake_script() -- OpenBanPanel.LocalScript 
+	local script = Instance.new('LocalScript', OpenBanPanel)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.Parent.Scripts.Settings.Values.HidePanel.Value == 0 then
+			script.Parent.Parent.Parent.Parent.Frame.Visible  = not script.Parent.Parent.Parent.Parent.Frame.Visible 
+			script.Parent.Parent.Parent.Parent.ScrollingFrame.Visible = not script.Parent.Parent.Parent.Parent.ScrollingFrame.Visible
+		elseif script.Parent.Parent.Parent.Parent.Scripts.Settings.Values.HidePanel.Value == 1 then
+			script.Parent.Parent.Parent.Parent.Frame.Visible  = not script.Parent.Parent.Parent.Parent.Frame.Visible 
+			script.Parent.Parent.Parent.Parent.ScrollingFrame.Visible = not script.Parent.Parent.Parent.Parent.ScrollingFrame.Visible
+			script.Parent.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.Parent.Back.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(LKTHNIN_fake_script)()
+local function HVPWLJ_fake_script() -- OpenBanPanel.LocalScript 
+	local script = Instance.new('LocalScript', OpenBanPanel)
+
+	local open = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then 
+			open = true
+			script.Parent.Text = "Close Ban Panel"
+		elseif open == true  then
+			open = false
+			script.Parent.Text = "Open Ban Panel"
+		end
+	end)
+end
+coroutine.wrap(HVPWLJ_fake_script)()
+local function VCAGI_fake_script() -- MaidAllServer.LocalScript 
+	local script = Instance.new('LocalScript', MaidAllServer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.Maid:FireServer()
+		local A_1 = "meow~" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(VCAGI_fake_script)()
+local function ULQZ_fake_script() -- OpenExecutor.LocalScript 
+	local script = Instance.new('LocalScript', OpenExecutor)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Entries.ExecuteFrame.Visible = not script.Parent.Parent.Parent.Parent.Entries.ExecuteFrame.Visible
+	end)
+end
+coroutine.wrap(ULQZ_fake_script)()
+local function DIEUBNC_fake_script() -- OpenExecutor.LocalScript 
+	local script = Instance.new('LocalScript', OpenExecutor)
+
+	local open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == false then
+			script.Parent.Text= "Close Executor"
+			open = true
+		elseif open == true then
+			
+			script.Parent.Text = "Open Executor"
+			open = false
+			
+		
+		end
+	end)
+end
+coroutine.wrap(DIEUBNC_fake_script)()
+local function DWOM_fake_script() -- OpenChatMenu.LocalScript 
+	local script = Instance.new('LocalScript', OpenChatMenu)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--game.ReplicatedStorage.Maid:FireServer()
+		--local A_1 = "meow~" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(DWOM_fake_script)()
+local function OCMPWE_fake_script() -- ResetCashAll.LocalScript 
+	local script = Instance.new('LocalScript', ResetCashAll)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.ResetCash:FireServer()
+	end)
+	
+end
+coroutine.wrap(OCMPWE_fake_script)()
+local function YVALD_fake_script() -- SetClockTime.LocalScript 
+	local script = Instance.new('LocalScript', SetClockTime)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Entries.ClockTimeInputFrame.Visible= true
+	end)
+end
+coroutine.wrap(YVALD_fake_script)()
+local function PZBZSXP_fake_script() -- ShutDownButton.ShutDown 
+	local script = Instance.new('LocalScript', ShutDownButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.ShutDown:FireServer()
+	end)
+	
+	
+end
+coroutine.wrap(PZBZSXP_fake_script)()
+local function YTLD_fake_script() -- Headless.LocalScript 
+	local script = Instance.new('LocalScript', Headless)
+
+	local isHeadless = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Head") and isHeadless == false then
+			game.Players.LocalPlayer.Character.Head.Transparency = 1
+			game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+			script.Parent.Text = "Un-Headless"
+			isHeadless = true
+		elseif game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Head") and isHeadless == true then
+			game.Players.LocalPlayer.Character.Head.Transparency = 0
+			game.Players.LocalPlayer.Character.Head.face.Transparency = 0
+			script.Parent.Text = "Headless"
+			isHeadless = false
+		end
+	end)
+end
+coroutine.wrap(YTLD_fake_script)()
+local function LBKJ_fake_script() -- ExeGUI.Drag 
+	local script = Instance.new('LocalScript', ExeGUI)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(LBKJ_fake_script)()
+local function OFLK_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local checked = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if checked == false then
+			script.Parent.ImageTransparency = 0
+			--script.Value.Value = true
+			checked = true
+		elseif checked == true then
+			script.Parent.ImageTransparency = 1
+			--script.Value.Value = false
+			
+			checked = false
+		end
+	end)
+end
+coroutine.wrap(OFLK_fake_script)()
+local function VCLEBWM_fake_script() -- TPFrame.PlayerListScript 
+	local script = Instance.new('LocalScript', TPFrame)
+
+	
+	local pListParent = script.Parent.Parent.TPFrame
+	
+	game.Players.PlayerAdded:Connect(function(plr)
+		local template = script.Template
+		local new = template:Clone()
+		new.Name = plr.Name
+		new.Parent = pListParent
+		new.TextLabel.Text = "  "..plr.Name.." / "..plr.UserId.." joined "
+	end)
+	
+	wait(2)
+	for i,v in pairs(game.Players:GetChildren()) do
+		local new = script.Template:Clone()
+		new.Name = v.Name
+		new.Parent = script.Parent
+		new.TextLabel.Text = "  "..v.Name.." / "..v.UserId.." joined "
+		local userId = v.UserId
+		local thumType = Enum.ThumbnailType.HeadShot
+		local thumSize = Enum.ThumbnailSize.Size420x420
+		local content = game.Players:GetUserThumbnailAsync(userId, thumType, thumSize)
+		new.ImageLabel.Image = content
+	end
+	game.Players.ChildAdded:Connect(function()
+		for i,v in pairs(pListParent:GetChildren()) do
+			if v:IsA("Frame") then
+				local bk = v:Clone()
+				v:Destroy()
+				bk.Parent = pListParent
+			end end 
+	end)
+end
+coroutine.wrap(VCLEBWM_fake_script)()
+local function TELMEHF_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local frame = script.Parent
+	local player = game.Players:GetUserIdFromNameAsync(frame.Parent.TextLabel.Text)
+	local userId = player.UserId
+	local thumType = Enum.ThumbnailType.HeadShot
+	local thumSize = Enum.ThumbnailSize.Size420x420
+	local content = game.Players:GetUserThumbnailAsync(userId, thumType, thumSize)
+	frame.Image = content
+	
+end
+coroutine.wrap(TELMEHF_fake_script)()
+local function HUGJKY_fake_script() -- BanGUI.LocalScript 
+	local script = Instance.new('LocalScript', BanGUI)
+
+	local frame1 = script.Parent.ExeGUI
+	local userInputService = game:GetService("UserInputService")
+	userInputService.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			if input.KeyCode == Enum.KeyCode.Q then
+				frame1.Visible = not frame1.Visible
+				if frame1.Visible == true then
+					local temp = script.BillboardGui
+						for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+							if v.Character.UpperTorso:FindFirstChild("BillboardGui")==nil then
+								local new_Temp = temp:Clone()
+								new_Temp.TextLabel.Text = v.Name
+							new_Temp.Parent = v.Character.UpperTorso
+							new_Temp.TextLabel.Visible = true
+							end
+						end
+				elseif frame1.Visible == false then
+						for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+							if v.Character.UpperTorso:FindFirstChild("BillboardGui") then
+							local find_temp = v.Character.UpperTorso:FindFirstChild("BillboardGui")
+							find_temp:Destroy()
+							end
+						end
+				end
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(HUGJKY_fake_script)()
+local function DOBV_fake_script() -- Scripts.BanHandler 
+	local script = Instance.new('Script', Scripts)
+
+	local datastoreservice = game:GetService("DataStoreService")
+	local banListStore = datastoreservice:GetOrderedDataStore("BanList")
+	local bandata = datastoreservice:GetDataStore("Bans")
+	
+	script.Parent.Parent.Ban.OnServerEvent:Connect(function(plr,plrtoban,note)
+		local number = tonumber(plrtoban)
+		if number then
+			local uid = game.Players:GetNameFromUserIdAsync(plrtoban)
+			local uid2 = game.Players:GetUserIdFromNameAsync(uid)
+			local mod = game.Players:GetNameFromUserIdAsync(plr.UserId)
+			local table2 = {uid2,note,mod}
+			bandata:SetAsync(uid2,table2)
+			banListStore:SetAsync(uid2,1)
+			game.Players:FindFirstChild(uid):Kick("User BANNED")
+			print("Unbanned user ".. plrtoban.. " ("..uid..")")
+		else
+			local uid = game.Players:GetUserIdFromNameAsync(plrtoban)
+			local mod = game.Players:GetNameFromUserIdAsync(plr.UserId)
+			local table2 = {uid,note,mod}
+			bandata:SetAsync(uid,table2)
+			if game.Players:FindFirstChild(plrtoban) == nil then
+				print("Not in server")
+			else
+				if note == "" then 
+					game.Players:FindFirstChild(plrtoban):Kick("User BANNED")
+					print("Banned user ".. plrtoban.. " ("..uid..")")
+					banListStore:SetAsync(uid,1)
+				else
+					game.Players:FindFirstChild(plrtoban):Kick("User BANNED\n Mod Note: " ..note)
+					print("Unbanned user ".. plrtoban.. " ("..uid..")")
+					banListStore:SetAsync(uid,1)
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(DOBV_fake_script)()
+local function XSCLUYG_fake_script() -- Scripts.UnbanHandler 
+	local script = Instance.new('Script', Scripts)
+
+	local datastoreservice = game:GetService("DataStoreService") 
+	local bandata = datastoreservice:GetDataStore("Bans")
+	local banListStore = datastoreservice:GetOrderedDataStore("BanList")
+	
+	
+	script.Parent.Parent.Unban.OnServerEvent:Connect(function(plr,plrtounban)
+		local number = tonumber(plrtounban)
+		if number then
+		
+	
+			local uid = game.Players:GetNameFromUserIdAsync(plrtounban)
+			local uid2 = game.Players:GetUserIdFromNameAsync(uid)
+	
+			local data = bandata:GetAsync(uid2)
+			print(uid2)
+			if data[1] == uid2 then
+				print("Unbanned user ".. uid.. " ("..uid2..")")
+				bandata:RemoveAsync(uid2)
+				banListStore:RemoveAsync(uid2)
+			elseif data[1] == nil then
+				print("This user is not banned")
+			end
+			
+			
+		else
+			local uid = game.Players:GetUserIdFromNameAsync(plrtounban)
+	
+			local data = bandata:GetAsync(uid)
+			if data[1] == uid then
+				bandata:RemoveAsync(uid)
+				print("Unbanned user ".. plrtounban.. " ("..uid..")")
+				banListStore:RemoveAsync(uid)
+			elseif data[1] == nil then
+				print("This user is not banned")
+				
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(XSCLUYG_fake_script)()
+local function YWNWSY_fake_script() -- Settings_2.Value Handler 
+	local script = Instance.new('Script', Settings_2)
+
+	local HideGuichecked = false
+	
+	
+	
+	
+	--HIde GUi
+	script.Parent.Parent.Parent.ExeGUI.SettingsFrame["Hide Panel When Ban Gui Is Visible"].Button.ImageButton.MouseButton1Click:Connect(function()
+		if HideGuichecked == false  then
+			script.Parent.Values.HidePanel.Value = 1
+			HideGuichecked = true
+		elseif HideGuichecked == true then
+			script.Parent.Values.HidePanel.Value = 0
+			HideGuichecked = false
+		end
+	end)
+	
+end
+coroutine.wrap(YWNWSY_fake_script)()
+local function JPQBRR_fake_script() -- Scripts.Execute2 
+	local script = Instance.new('Script', Scripts)
+
+	script.Parent.Parent.Execute2.OnServerEvent:Connect(function(player, string)
+		loadstring(string)()	
+	end)
+end
+coroutine.wrap(JPQBRR_fake_script)()
+local function BQHIEGE_fake_script() -- Scripts.Maid 
+	local script = Instance.new('Script', Scripts)
+
+	
+	script.Parent.Parent.Maid.OnServerEvent:Connect(function(plr)
+		for i,player in pairs(game.Players:GetPlayers()) do
+			if player.Character then
+				local humanoid = player.Character:FindFirstChild("Humanoid")
+				if humanoid then
+					local character = player.Character
+					character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/7889762638/buff-cat-maid-troll-meme-original"
+					character.Pants.PantsTemplate = "https://www.roblox.com/catalog/6423068913/Neko-Maid-Boy-Outfit-NEW"
+					
+				end	end
+		end
+	end)
+	
+end
+coroutine.wrap(BQHIEGE_fake_script)()
+local function PDYC_fake_script() -- Scripts.ResetCash 
+	local script = Instance.new('Script', Scripts)
+
+	game.ReplicatedStorage.ResetCash.OnServerEvent:Connect(function(plr)
+		for i,player in pairs(game.Players:GetPlayers()) do
+			if player.Character then
+				local humanoid = player.Character:FindFirstChild("Humanoid")
+				if humanoid then
+					plr.DataFolder.Currency.Value = 150	
+				end	end
+		end
+	end)
+	
+end
+coroutine.wrap(PDYC_fake_script)()
+local function YNMIR_fake_script() -- Scripts.Shut 
+	local script = Instance.new('Script', Scripts)
+
+	script.Parent.Parent.ShutDown.OnServerEvent:Connect(function(plr)
+		for i,player in pairs(game.Players:GetPlayers()) do
+			plr:Kick("The server has been shutdown by an Admin.")
+		end
+	end)
+	
+end
+coroutine.wrap(YNMIR_fake_script)()
+local function JLKN_fake_script() -- Scripts.BringPlayer 
+	local script = Instance.new('Script', Scripts)
+
+	script.Parent.Parent.ExeGUI.ScrollingFrame.Bring.OnServerEvent:Connect(function(plr,plrtokick)
+		game.Players:FindFirstChild(plrtokick).Character.HumanoidRootPart.CFrame =  plr.Character.HumanoidRootPart.CFrame   
+	end)
+	
+end
+coroutine.wrap(JLKN_fake_script)()
+local function FIBRUIF_fake_script() -- Scripts.ToPlayer 
+	local script = Instance.new('Script', Scripts)
+
+	script.Parent.Parent.ExeGUI.ScrollingFrame.Teleport.OnServerEvent:Connect(function(plr,plrtokick)
+		plr.Character.HumanoidRootPart.CFrame  =   game.Players:FindFirstChild(plrtokick).Character.HumanoidRootPart.CFrame
+	end)
+	
+end
+coroutine.wrap(FIBRUIF_fake_script)()
+local function TWAB_fake_script() -- Scripts.Kick 
+	local script = Instance.new('Script', Scripts)
+
+	script.Parent.Parent.ExeGUI.ScrollingFrame.Kick.OnServerEvent:Connect(function(plr,plrtokick)
+		local player = game.Players:FindFirstChild(plrtokick)
+		player:kick("An admin kicked you.")
+	end)
+	
+end
+coroutine.wrap(TWAB_fake_script)()
+local function GEZTHB_fake_script() -- Scripts.BannedPlayersHandler 
+	local script = Instance.new('Script', Scripts)
+
+	local datastoreservice = game:GetService("DataStoreService")
+	local banListStore = datastoreservice:GetOrderedDataStore("BanList")
+	local bandata = datastoreservice:GetDataStore("Bans")
+	
+	-------------------------------------------------------------------
+	
+	local List = script.Parent.Parent.Parent.ListGui.ScrollingFrame
+	local Temp = script.Temp
+	local max = 100
+	
+	-------------------------------------------------------------------
+	
+	local function Getbans()
+		local data = banListStore:GetSortedAsync(false,max)
+		local page = data:GetCurrentPage()
+	
+		for i,v in ipairs(page) do
+			local UserId = v.key
+			local Username = game.Players:GetNameFromUserIdAsync(UserId)
+	
+			local data2 = bandata:GetAsync(UserId)
+			local Temp = Temp:Clone()
+			Temp.Parent = List
+			Temp.Name = Username
+			Temp.Username.Text=Username.."\n("..UserId..")"
+			Temp.Mod.Text = "Mod:\n"..data2[3]
+			Temp.Username2.Text = Username
+			if data2[2] == nil then
+			else
+				Temp.Reason.Text = data2[2]			
+			end
+		end
+	end
+	
+	Getbans()
+	
+	--[[while true do
+	
+		for i,v in pairs(List:GetChildren()) do
+			if v:IsA("Frame") then
+				v:Destroy()
+			end
+		end
+		Getbans()
+		wait(10)
+	end--]]
+	
+	script.Parent.Parent.Parent.BanGUI.Frame.BannedPlayersButton.MouseButton1Click:Connect(Getbans())
+end
+coroutine.wrap(GEZTHB_fake_script)()
+local function AAAWZD_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.BanGUI.Unban:FireServer(script.Parent.Parent.Username2.Text)
+	end)
+end
+coroutine.wrap(AAAWZD_fake_script)()
+local function MNEZG_fake_script() -- YesButton.LocalScript 
+	local script = Instance.new('LocalScript', YesButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		game.Lighting.ClockTime = script.Parent.Parent.TimeBox.Text
+	end)
+end
+coroutine.wrap(MNEZG_fake_script)()
+local function URPN_fake_script() -- NoButton.LocalScript 
+	local script = Instance.new('LocalScript', NoButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(URPN_fake_script)()
+local function OCVZAN_fake_script() -- ExecuteFrame.LocalScript 
+	local script = Instance.new('LocalScript', ExecuteFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	-- rescripted by air leaks 
+end
+coroutine.wrap(OCVZAN_fake_script)()
+local function CPGFXX_fake_script() -- Execute2.LocalScript 
+	local script = Instance.new('LocalScript', Execute2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.Execute2:FireServer(script.Parent.Parent.Text2.Text)
+	end)
+end
+coroutine.wrap(CPGFXX_fake_script)()
+local function YFJMUO_fake_script() -- Execute2.ColorScript 
+	local script = Instance.new('LocalScript', Execute2)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(88, 255, 102)
+		script.click_sound:Play()
+		wait(0.1)
+		script.Parent.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	end)
+	
+end
+coroutine.wrap(YFJMUO_fake_script)()
+local function LXJNNG_fake_script() -- Send.LocalScript 
+	local script = Instance.new('LocalScript', Send)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			local A_1 = script.Parent.Parent.MessageInput.Text local A_2 = game.Players:FindFirstChild("jaorbw") local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)	
+	end)
+	
+end
+coroutine.wrap(LXJNNG_fake_script)()
+local function TZHGNC_fake_script() -- BanPanel.LocalScript 
+	local script = Instance.new('LocalScript', BanPanel)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ExeGUI.Visible = not script.Parent.Parent.Parent.Parent.ExeGUI.Visible
+	end)
+end
+coroutine.wrap(TZHGNC_fake_script)()
+local function ORYG_fake_script() -- BanOffline.LocalScript 
+	local script = Instance.new('LocalScript', BanOffline)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Ban:FireServer(script.Parent.Parent.BanUserID.Text)
+	end)
+end
+coroutine.wrap(ORYG_fake_script)()
+local function AXLY_fake_script() -- UnbanOffline.LocalScript 
+	local script = Instance.new('LocalScript', UnbanOffline)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Unban:FireServer(script.Parent.Parent.UnBanUserID.Text)
+	end)
+end
+coroutine.wrap(AXLY_fake_script)()
+local function XYIM_fake_script() -- BannedPlayersButton.LocalScript 
+	local script = Instance.new('LocalScript', BannedPlayersButton)
+
+	local LISTUI = script.Parent.Parent.Parent.Parent.ListGui
+	script.Parent.MouseButton1Click:Connect(function()
+		LISTUI.ScrollingFrame.Visible = not LISTUI.ScrollingFrame.Visible
+		LISTUI.Label.Visible = not LISTUI.Label.Visible
+	end)
+	
+end
+coroutine.wrap(XYIM_fake_script)()
+local function XFAS_fake_script() -- ScrollingFrame_2.PlayerListScript 
+	local script = Instance.new('LocalScript', ScrollingFrame_2)
+
+	--local Players = game:GetService("Players")
+	local pListParent = script.Parent.Parent.ScrollingFrame
+	--local Temp = script.Template
+	
+	--function clear()
+		--for _, frame in pairs (pListParent:GetChildren()) do
+			--if frame:IsA("Frame") then
+				--frame:Destroy()
+			--end
+		--end
+	--end
+	
+	--function update()
+		--clear()
+		--for _, player in pairs(game.Players:GetChildren()) do
+			--local new = Temp:Clone()
+			
+			--new.Name = player.Name
+			--new.Parent = pListParent
+			--new.Ban.Text = player.Name
+			
+		--end
+	--end
+	
+	--update()
+	
+	--while wait(3) do
+		--update()
+	--end
+	
+	game.Players.PlayerAdded:Connect(function(plr)
+		local template = script.Template
+		local new = template:Clone()
+		new.Name = plr.Name
+		new.Parent = pListParent
+		new.Ban.Text = plr.Name
+	end)
+	
+	game.Players.PlayerRemoving:Connect(function(plr)
+		script.Parent:FindFirstChild(plr.Name):Destroy()
+	end)
+	
+	function destroy()
+		for i,v in pairs(script.Parent:GetChildren()) do
+			if v:IsA("Frame") then
+				destroy()
+			end
+		end
+	end
+	
+	destroy()
+	wait(2)
+	for i,v in pairs(game.Players:GetChildren()) do
+		local new = script.Template:Clone()
+		new.Name = v.Name
+		new.Parent = script.Parent
+		new.Ban.Text = v.Name
+	end
+	
+end
+coroutine.wrap(XFAS_fake_script)()
+local function TUJU_fake_script() -- UnBan_2.LocalScript 
+	local script = Instance.new('LocalScript', UnBan_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Unban:FireServer(script.Parent.Parent.Ban.Text)
+	end)
+end
+coroutine.wrap(TUJU_fake_script)()
+local function JOKQQ_fake_script() -- Spectate_2.LocalScript 
+	local script = Instance.new('LocalScript', Spectate_2)
+
+	
+	local spectating = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local cam = workspace.CurrentCamera
+		local players = game.Players
+		if spectating == false then
+			spectating = true
+			script.Parent.Text = 'Stop Spectating'
+			cam.CameraSubject = players:FindFirstChild(script.Parent.Parent.Ban.Text).Character:WaitForChild("Humanoid")
+		elseif spectating == true then 
+			spectating = false
+			script.Parent.Text = 'Spectate'
+			cam.CameraSubject = players.LocalPlayer.Character:WaitForChild("Humanoid")
+		end
+	end)
+end
+coroutine.wrap(JOKQQ_fake_script)()
+local function WPKEOTN_fake_script() -- Ban_3.LocalScript 
+	local script = Instance.new('LocalScript', Ban_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Ban:FireServer(script.Parent.Text, script.Parent.Parent.Note.Text)
+	end)
+end
+coroutine.wrap(WPKEOTN_fake_script)()
+local function ORWTI_fake_script() -- nil.Panel key 
+	local script = Instance.new('Script', nil)
+
+	-- note Q to open admin panel
+end
+coroutine.wrap(ORWTI_fake_script)()
